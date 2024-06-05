@@ -7,7 +7,7 @@ class ProductBase(BaseModel):
 class ProductCreate(ProductBase):
     pass
 
-class ProductUpdate(SQLModel):
+class ProductUpdate(BaseModel):
     name: str | None = None
     value: float | None = None
 
